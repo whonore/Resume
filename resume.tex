@@ -1,0 +1,147 @@
+\documentclass[10pt, letterpaper, sans]{moderncv}
+
+% CVS Style
+\moderncvstyle{casual} % casual classic banking oldstyle fancy
+\moderncvcolor{blue} % black blue burgundy green grey orange purple red
+\renewcommand{\familydefault}{\sfdefault} % \sfdefault \rmdefault
+\nopagenumbers{}
+
+\usepackage[utf8]{inputenc}
+\usepackage[scale=0.75]{geometry}
+%\setlength{\hintscolumnwidth}{3cm} % change the width of the date column
+
+% Personal
+\name{Wolf}{Honor\'{e}}
+%\title{Resumé title}
+%\address{street and number}{postcode city}{country}
+\phone[mobile]{(210)~979~1509} % mobile fixed fax
+\email{whonore@u.rochester.edu}
+%\homepage{www.johndoe.com}
+%\social[linkedin]{john.doe} % linkedin twitter github
+%\extrainfo{additional information}
+%\photo[64pt][0.4pt]{picture}
+%\quote{Some quote}
+
+% Bibliography
+%\makeatletter\renewcommand*{\bibliographyitemlabel
+%{\@biblabel{\arabic{enumiv}}}\makeatother % show labels
+%\renewcommand{\refname}{Articles} % rename heading text
+%\usepackage{multibib} % multiple entries
+%\newcites{book,misc}{{Books},{Others}}
+
+\begin{document}
+
+\makecvtitle
+
+\section{Education}
+\cventry{2016--}
+		{Ph.D. Computer Science}
+        {Yale University}
+        {}
+        {}
+        {Expected start in August 2016}
+\cventry{2012--2016}
+	    {B.A. Computer Science/B.S. Applied Math}
+        {University of Rochester}
+        {} % City
+        {\textit{3.98/4.00} (Fall 2015)}
+        {Expected graduation in May 2016}
+
+\section{Experience}
+\subsection{Work}
+\cventry{Summer 2014, 2015}
+		{Student Analyst}
+        {Southwest Research Institute}
+        {San Antonio}
+        {}
+        {Primarily worked on a tool chain to create customizable MapServer maps
+        from raw geographic data. Also wrote a program to automatically gather
+        documentation spread over multiple files and link it all together in an
+        HTML document.}
+\cventry{2015-2016}
+		{Teaching Assistant}
+        {University of Rochester}
+        {}
+        {}
+        {Assisted for intro programming, data structures, and computer
+        organization course. Duties included holding office hours and designing
+        and grading programming projects.}
+
+\subsection{Research}
+\cventry{Spring 2016 (in progress)}
+		{Independent Study}
+        {University of Rochester}
+        {Professor John Criswell}
+        {}
+        {Attempting to detect potentially malicious kernel modules using LLVM's
+        Data Structure Analysis.}
+\cventry{Fall 2015}
+		{Independent Study}
+        {University of Rochester}
+        {Professor John Criswell}
+        {}
+        {Investigated methods of improving Secure Virtual Architecture
+        performance by replacing compiler instrumentation with novel use of
+        address space identifiers.}
+\cventry{Spring 2015}
+		{Independent Study}
+        {University of Rochester}
+        {Professor Lenhart Schubert}
+        {}
+        {Studied patterns in verb complements (specifically prepositional
+        phrases) with the goal of improving natural language processing
+        software’s ability to parse ambiguous sentences.}
+
+%\cvitem
+%\cvdoubleitem
+%\cvlistitem
+%\cvlistdoubleitem
+
+\section{Relevant Skills}
+\cvitem{Programming Languages}{Python, C, C++, Java, Haskell, HTML, JavaScript}
+\cvitem{Systems}{Linux, Windows (XP, 7)}
+\cvitem{Software}{Visual Studio, Microsoft Office, Photoshop, PTC Creo}
+
+\section{Honors and Awards}
+\cventry{Joined 2015}{Phi Beta Kappa member}{Iota Chapter}{}{}{}
+\cventry{2012-2015}{Dean's List}{University of Rochester}{}{}{}
+\cventry{2012}{Wilder Trustee Scholarship}{University of Rochester}{}{}{}
+
+%\section{References}
+%\begin{cvcolumns}
+%  \cvcolumn{Category 1}{\begin{itemize}\item Person 1\end{itemize}}
+%  \cvcolumn[0.5]{All}{That person, and those also}
+%\end{cvcolumns}
+
+% Publications from a BibTeX file without multibib
+% \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}} % labels
+% \renewcommand{\refname}{Articles} % rename header text
+%\nocite{*}
+%\bibliographystyle{plain}
+%\bibliography{publications} publications is the name of a BibTeX file
+
+% Publications from a BibTeX file using the multibib package
+%\section{Publications}
+%\nocitebook{book1,book2}
+%\bibliographystylebook{plain}
+%\bibliographybook{publications} publications is the name of a BibTeX file
+%\nocitemisc{misc1,misc2,misc3}
+%\bibliographystylemisc{plain}
+%\bibliographymisc{publications}
+
+% Cover letter
+%\clearpage
+
+% Recipient
+%\recipient{Name}{Addr}
+%\date{January 01, 1984}
+%\opening{Dear Sir or Madam,}
+%\closing{Yours faithfully,}
+%\enclosure[Attached]{curriculum vit\ae{}}
+%\makelettertitle
+
+% Letter body.
+
+%\makeletterclosing
+
+\end{document}
