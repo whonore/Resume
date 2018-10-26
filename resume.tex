@@ -15,7 +15,7 @@
 %\title{Resumé title}
 %\address{street and number}{postcode city}{country}
 \phone[mobile]{(210)~979~1509} % mobile fixed fax
-\email{whonore@u.rochester.edu}
+\email{wolf.honore@yale.edu}
 %\homepage{www.johndoe.com}
 %\social[linkedin]{john.doe} % linkedin twitter github
 %\extrainfo{additional information}
@@ -31,80 +31,120 @@
 
 \begin{document}
 
+\renewcommand*{\namefont}{\fontsize{20}{24}\mdseries\upshape}
 \makecvtitle
+\vspace{-1cm}
 
 \section{Education}
 \cventry{2016--}
-		{Ph.D. Computer Science}
+        {Ph.D. Computer Science}
         {Yale University}
         {}
         {}
-        {Expected start in August 2016}
+        {Advised by: Zhong Shao}
 \cventry{2012--2016}
-	    {B.A. Computer Science/B.S. Applied Math}
+        {B.A. Computer Science/B.S. Applied Math}
         {University of Rochester}
         {} % City
-        {\textit{3.98/4.00} (Fall 2015)}
-        {Expected graduation in May 2016}
+        {GPA: \textit{3.98/4.00}}
+        {Graduated \textit{Summa Cum Laude}}
 
-\section{Experience}
-\subsection{Work}
-\cventry{Summer 2014, 2015}
-		{Student Analyst}
+\section{Research Projects}
+\cventry{2018 (ongoing)}
+        {Deep Spec Web Server}
+        {Yale University}
+        {In collaboration with: University of Pennsylvania, Princeton University}
+        {}
+        {Extending CertiKOS to run a verified web server.
+         Formalizing the connection between user program and kernel by proving that
+         the CertiKOS socket system call specifications satisfy the axiomatized
+         user-level specifications.}
+\cventry{2018 (ongoing)}
+        {Witness Passing}
+        {Yale University}
+        {Advised by: Zhong Shao}
+        {}
+        {Developing a general, compositional framework for distributed system verification.
+         By adding additional logical information to network messages, implicit invariants
+         can be make explicit, simplifying the proofs.}
+\cventry{2017--2018}
+        {690 Project (Qualifying Exam Project)}
+        {Yale University}
+        {Advised by: Zhong Shao}
+        {}
+        {Extended CertiKOS with networking support.
+         Verified a C implementation of the WormSpace distributed system in Coq.}
+\cventry{Spring 2016}
+        {Statically Detecting Rootkits (Independent Study)}
+        {University of Rochester}
+        {Advised by: John Criswell}
+        {}
+        {Created an LLVM compiler pass to statically detect potentially malicious kernel modules.
+         It searches the code for comparisons between pointers and system calls to mark
+         memory addresses that may be in kernel memory, then flags writes to those
+         addresses.}
+
+\section{Professional Experience}
+\cventry{Summer 2016}
+        {Student Analyst}
         {Southwest Research Institute}
         {San Antonio}
         {}
-        {Primarily worked on a tool chain to create customizable MapServer maps
-        from raw geographic data. Also wrote a program to automatically gather
-        documentation spread over multiple files and link it all together in an
-        HTML document.}
-\cventry{2015-2016}
-		{Teaching Assistant}
-        {University of Rochester}
+        {Wrote code to generate complex data for training and testing particle swarm optimization.}
+\cventry{Summer 2015}
+        {Student Analyst}
+        {Southwest Research Institute}
+        {San Antonio}
         {}
+        {Created a program to consolidate heterogeneous documentation into an HTML file.}
+\cventry{Summer 2014}
+        {Student Analyst}
+        {Southwest Research Institute}
+        {San Antonio}
         {}
-        {Assisted for intro programming, data structures, and computer
-        organization course. Duties included holding office hours and designing
-        and grading programming projects.}
+        {Developed a tool-chain to convert raw GIS data into customizable MapServer maps.}
 
-\subsection{Research}
-\cventry{Spring 2016 (in progress)}
-		{Independent Study}
-        {University of Rochester}
-        {Professor John Criswell}
+\section{Teaching Experience}
+\cventry{Fall 2018}
+        {Teaching Assistant}
+        {Yale University}
+        {CPSC 422/522: OS Design and Implementation}
         {}
-        {Attempting to detect potentially malicious kernel modules using LLVM's
-        Data Structure Analysis.}
+        {Instructor: Zhong Shao}
+\cventry{Fall 2017}
+        {Teaching Assistant}
+        {Yale University}
+        {CPSC 431/531: Algorithmic Computer Music}
+        {}
+        {Instructor: Scott Petersen}
+\cventry{Spring 2016}
+        {Teaching Assistant}
+        {University of Rochester}
+        {CSC 252: Computer Organization}
+        {}
+        {Instructor: Engin Ipek}
 \cventry{Fall 2015}
-		{Independent Study}
+        {Teaching Assistant}
         {University of Rochester}
-        {Professor John Criswell}
+        {CSC 171: The Science of Programming}
         {}
-        {Investigated methods of improving Secure Virtual Architecture
-        performance by replacing compiler instrumentation with novel use of
-        address space identifiers.}
+        {Instructor: George Ferguson}
 \cventry{Spring 2015}
-		{Independent Study}
+        {Teaching Assistant}
         {University of Rochester}
-        {Professor Lenhart Schubert}
+        {CSC 172: The Science of Data Structures}
         {}
-        {Studied patterns in verb complements (specifically prepositional
-        phrases) with the goal of improving natural language processing
-        software’s ability to parse ambiguous sentences.}
+        {Instructor: Ted Pawlicki}
 
 %\cvitem
 %\cvdoubleitem
 %\cvlistitem
 %\cvlistdoubleitem
 
-\section{Relevant Skills}
-\cvitem{Programming Languages}{Python, C, C++, Java, Haskell, HTML, JavaScript}
-\cvitem{Systems}{Linux, Windows (XP, 7)}
-\cvitem{Software}{Visual Studio, Microsoft Office, Photoshop, PTC Creo}
-
 \section{Honors and Awards}
+\cventry{2016}{Graduated \textit{Summa Cum Laude}}{University of Rochester}{}{}{}
 \cventry{Joined 2015}{Phi Beta Kappa member}{Iota Chapter}{}{}{}
-\cventry{2012-2015}{Dean's List}{University of Rochester}{}{}{}
+\cventry{2012-2016}{Dean's List}{University of Rochester}{}{}{}
 \cventry{2012}{Wilder Trustee Scholarship}{University of Rochester}{}{}{}
 
 %\section{References}
