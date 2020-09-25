@@ -8,7 +8,7 @@ PDF_FILES := $(PAPER).pdf
 
 BIB_FILES := $(wildcard *.bib)
 
-EXTRA_EXT := aux log out nav toc snm vrb bbl bcf blg run.xml
+EXTRA_EXT := aux log out nav toc snm vrb bbl bcf blg run.xml fdb_latexmk fls synctex.gz
 EXTRA_EXT := $(addprefix *., $(EXTRA_EXT)) *-blx.bib
 
 .PHONY: all show-errors clean-nopdf clean
