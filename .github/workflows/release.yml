@@ -1,0 +1,32 @@
+name: Build and release resume PDF
+
+on:
+  push:
+    branches: ["main"]
+
+  workflow_dispatch:
+
+concurrency:
+  group: "release"
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Install Nix
+        uses: cachix/install-nix-action@v18
+        with:
+          nix_path: nixpkgs=channel:nixpkgs-unstable
+      - name: Build artifact
+        run: nix build --verbose --print-build-logs --cores 0 --max-jobs auto --out-link build
+      - name: Release
+        uses: marvinpinto/action-automatic-releases@v1.2.1
+        with:
+          repo_token: "${{ secrets.GITHUB_TOKEN }}"
+          automatic_release_tag: "latest"
+          prerelease: false
+          title: "Resume"
+          files: build/resume.pdf
