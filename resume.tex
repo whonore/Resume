@@ -12,9 +12,14 @@
 \mobile{(210)~979~1509}
 \email{wolfhonore@gmail.com}
 \social[github]{whonore}
+\social[googlescholar]{wolf.honore}
+\social[linkedin]{whonore}
 \homepage{whonore.github.io}
 
 \begin{document}
+
+\newcommand{\about}{\raisebox{0.25ex}{\scalebox{0.7}{$\sim$}}}
+\newcommand{\ormore}{\raisebox{0.25ex}{+}}
 
 \renewcommand*{\namefont}{\fontsize{20}{24}\mdseries\upshape}
 \makecvtitle{}
@@ -28,18 +33,105 @@
         {}
         {}
         {Advised by: Zhong Shao}
-\cventry{2016--2019}
-        {MS/MPhil Computer Science}
-        {Yale University}
-        {}
-        {}
-        {Advised by: Zhong Shao}
 \cventry{2012--2016}
         {BA Computer Science/BS Applied Math}
         {University of Rochester}
         {}
         {GPA:\@ \textit{3.98/4.00}}
         {Graduated \textit{Summa Cum Laude}}
+
+\section{Industry Experience}
+
+\cventry{July 2022 -- Present}
+        {Staff Research Engineer}
+        {CertiK}
+        {Remote}
+        {}
+        {%
+          \begin{itemize}
+            \item
+              Developed a suite of tools to automatically translate Solidity
+              code annotated with a custom formal specification language into an
+              equivalent Dafny model.
+            \item
+              Contributed to a VSCode extension and language server that
+              integrates with the verification tools to provide a better user
+              experience.
+            \item
+              Worked with a remote team of auditors to train them in writing
+              specifications for client projects.
+            \item
+              Helped to scale formal verification capabilities by developing a
+              procedure and training resources for using the verification tools
+              and integrating the results into audit reports.
+            \item
+              Verified client blockchain and smart contract projects in a
+              variety of languages, including Solidity, Move, Rust, and Haskell.
+          \end{itemize}
+        }
+\cventry{Summer 2019 (Internship)}
+        {Formal Verification Engineer}
+        {SiFive}
+        {San Mateo, CA}
+        {}
+        {%
+          \begin{itemize}
+            \item
+              Formalized and partially verified a cache coherence algorithm
+              using the Kami Coq framework.
+          \end{itemize}
+        }
+\cventry{Summer 2014, 2015, 2016 (Internship)}
+        {Student Analyst}
+        {Southwest Research Institute}
+        {San Antonio, TX}
+        {}
+        {%
+          \begin{itemize}
+            \item
+              Created a program to generate complex data for training and
+              testing machine learning particle swarm optimization.
+            \item
+              Created a program to consolidate documentation from heterogeneous
+              sources (DOCX, PDF, code comments, etc.) into HTML\@.
+            \item
+              Developed a tool-chain to convert raw GIS data into customizable
+              MapServer maps.
+        \end{itemize}
+        }
+
+\section{Open Source Projects}
+
+\cventry{2017--Present}
+        {Coqtail}
+        {Creator/Maintainer}
+        {\httpslink{github.com/whonore/Coqtail}}
+        {}
+        {%
+          \begin{itemize}
+            \item
+              A popular Vim plugin that interfaces with the Coq proof assistant
+              to provide an IDE experience similar to CoqIDE, ProofGeneral, or VSCoq.
+            \item
+              Over 7 years old, 250\ormore{} stars, \about{}70 PRs from contributors.
+          \end{itemize}
+        }
+\cventry{2020}
+        {New Haven Help With COVID}
+        {Contributor/Lead Web Developer}
+        {\httpslink{github.com/newhaven-helpwithcovid/covid-volunteers}}
+        {}
+        {%
+          \begin{itemize}
+            \item
+              A Ruby on Rails website to help match volunteers with
+              opportunities in New Haven during the peak of the COVID-19 pandemic.
+            \item
+              Managed a small team of remote student developers.
+            \item
+              Handled website and database deployment (Postgres) and maintenance.
+          \end{itemize}
+        }
 
 \section{Research Projects}
 
@@ -112,81 +204,6 @@
           Created an LLVM compiler pass to statically detect potentially
           malicious kernel modules by searching for comparisons between pointers
           and system call addresses.
-        }
-
-\section{Industry Experience}
-
-\cventry{2022--}
-        {Sr. Research Engineer}
-        {CertiK}
-        {Remote}
-        {}
-        {%
-          Formally verified blockchain and smart contract code using Coq, Dafny,
-          and Move.
-          Developed a tool to translate Solidity code with formal specifications
-          into a Dafny model.
-        }
-\cventry{Summer 2019 (Internship)}
-        {Formal Verification Engineer}
-        {SiFive}
-        {San Mateo, CA}
-        {}
-        {%
-          Formalized and partially verified a cache coherence algorithm using
-          the Kami Coq framework.
-        }
-\cventry{Summer 2016 (Internship)}
-        {Student Analyst}
-        {Southwest Research Institute}
-        {San Antonio, TX}
-        {}
-        {%
-          Created a program to generate complex data for training and testing
-          particle swarm optimization.
-        }
-\cventry{Summer 2015 (Internship)}
-        {Student Analyst}
-        {Southwest Research Institute}
-        {San Antonio, TX}
-        {}
-        {%
-          Created a program to consolidate documentation from heterogeneous
-          sources into HTML\@.
-        }
-\cventry{Summer 2014 (Internship)}
-        {Student Analyst}
-        {Southwest Research Institute}
-        {San Antonio, TX}
-        {}
-        {%
-          Developed a tool-chain to convert raw GIS data into customizable
-          MapServer maps.
-        }
-
-\section{Open Source Projects}
-
-\cventry{2020}
-        {New Haven Help With COVID}
-        {Contributor/Lead Web Developer}
-        {\httpslink  % chktex 1
-          [github.com/newhaven-helpwithcovid/covid-volunteers]
-          {www.github.com/newhaven-helpwithcovid/covid-volunteers}
-        }
-        {}
-        {%
-          Managed a small team of student developers to create and maintain a
-          website that helped match volunteers with opportunities in New Haven
-          during the peak of the COVID-19 pandemic.
-        }
-\cventry{2017--}
-        {Coqtail}
-        {Creator/Maintainer}
-        {\httpslink[github.com/whonore/Coqtail]{www.github.com/whonore/Coqtail}}
-        {}
-        {%
-          Created a successful Vim plugin that interfaces with the Coq proof
-          assistant to provide an IDE experience similar to CoqIDE or ProofGeneral.
         }
 
 \section{Teaching Experience}
